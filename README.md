@@ -7,10 +7,6 @@
 
 <a href="https://yutsu.github.io/latex_recognizer/" target="_blank">Demo website</a>
 
-**Note**:
-
-* Might not work with Safari. Please use Chrome.
-* It coult take a minute to load data.
 
 ## What it does
 This application will give you the latex code that corresponds to the symbol written in the box.
