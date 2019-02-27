@@ -2,10 +2,10 @@
 
 ## Demo
 
-![](.gif)
+![](latex_CNN.gif)
 
 
-<a href="https://yutsu.github.io//">Demo website</a>
+<a href="https://yutsu.github.io/latex_recognizer/" target="_blank">Demo website</a>
 
 **Note**:
 
