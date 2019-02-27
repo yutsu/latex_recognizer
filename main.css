@@ -1,0 +1,44 @@
+ul{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+li{
+    padding: 0;
+    margin: 0;
+    list-style-type:none outside;
+}
+
+
+button {
+    margin-left:10px;
+}
+
+section {
+    margin-top:120px
+}
+
+
+.btn-group {
+    margin-top:40px;
+}
+
+.canvas {
+    border:1px solid #b9bfc9;
+    margin-top:25px;
+}
+
+.col {
+    margin-left:100px;
+}
+
+.prediction {
+    font-size: 20pt;
+}
+
+
+.table tbody>tr>th.prediction{
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: var(--rate) 15%;
+}

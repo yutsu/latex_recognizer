@@ -1,0 +1,104 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>LaTeX CNN</title>
+  <!-- MathJax -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] },});
+</script>
+
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML">
+</script>
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+
+  <!-- bs4 css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- TensorFlow.js script -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.15.1/dist/tf.min.js"></script>
+<!--   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script> -->
+
+  <!-- fabric script -->
+  <script src="fabric.js"></script>
+
+  <!-- main script -->
+  <script src = "main.js" > </script>
+
+  <!-- main css -->
+  <link rel = "stylesheet" href="main.css" >
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <a class="navbar-brand" href="#"><h1>LaTeX Recognizer</h1></a>
+  </nav>
+  <div class="container-fluid">
+
+   <p>Draw a symbol in the box. It gives you a set of possible LaTeX codes</p>
+   <p>Some LaTeX symbols might not be rendered correctly by MathJax.</p>
+ </div>
+
+
+ <div class="row">
+  <div class="col">
+    <h2 id ='status' >loading...</h2>
+    <canvas id="canvas" width="300" height="300" class="canvas"></canvas>
+    <div class="btn-group">
+
+      <button type="button" class="btn btn-outline-danger" onclick ='eraseCanvas()' disabled>Clear</button>
+    </div>
+  </div>
+  <div class="col">
+
+    <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Symbol</th>
+        <th scope="col">Latex Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="prediction" id = "symbol1">
+        </th>
+
+        <td id = "latex1"></td>
+      </tr>
+      <tr>
+        <th scope="row" class="prediction" id = "symbol2"></th>
+        <td id = "latex2"></td>
+      </tr>
+      <tr>
+        <th scope="row" class="prediction" id = "symbol3"></th>
+        <td id = "latex3"></td>
+      </tr>
+      <tr>
+        <th scope="row" class="prediction" id = "symbol4"></th>
+        <td id = "latex4"></td>
+      </tr>
+      <tr>
+        <th scope="row" class="prediction" id = "symbol5"></th>
+        <td id = "latex5"></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+
+</body>
+
+<script>
+	console.log('starting');
+	startLoadingModel()
+</script>
+</html>
